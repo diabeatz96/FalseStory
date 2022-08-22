@@ -8,6 +8,10 @@
       .muscle {
         fill: #515761;
       }
+
+      .muscle:hover {
+        fill: red;
+      }
     </style>
   </defs>
   <g id="bodyFront" class="body-front">
