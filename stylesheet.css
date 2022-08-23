@@ -7,14 +7,12 @@ ul, ol {margin: 1em 0; padding-left: 40px}
 p, figure {margin: 1em 0}
 a img {border: none}
 sup, sub {line-height: 0}
+* {font-family: 'Roboto', sans-serif;}
 
 
 html {
-    background-color: #001D26;
+    background-color: #182a36;
 }
-
-
-
 
 
 /*
@@ -24,9 +22,10 @@ html {
 .Nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content:center;
     width: 100%;
-    padding-top: 20px;
+    margin-top: 30px;
+    margin-bottom: 50px;
 }
 
 a {
@@ -35,15 +34,26 @@ a {
 
 nav {
     padding-top: 10px;
+    margin-top: 15px;
 }
 .Button {
     width: 200px;
     height: 50px;
-    border-radius: 50px;
+    border-radius: 5px;
     background-color: #0081D5;
     text-align: center;
     font-size: 1.2rem;
     color: white;
+    transition: opacity 0.25s;
+    margin-right: 25px;
+}
+
+.Button:hover {
+  opacity: 0.85;
+}
+
+.Button:active {
+  opacity: 0.7;
 }
 
 #Button2 {
@@ -67,4 +77,40 @@ nav {
 
 .BackBody {
     width: 20rem;
+}
+
+.bodies-settings-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+
+/*
+test is placeholder for future settings, feel free to remove as needed
+*/
+
+.test {  
+  color: rgb(186, 186, 186);
+  background-color: #425663;
+  font-size: 24px;
+  text-align:center;
+  width: 300px;
+  border: solid #6e8593;
+  margin-left: 10px;
+}
+
+.settings {
+  display: flex;
+  justify-content: left;
+  margin-right: 330px;
+}
+
+/* 
+flexbox issue, resolved temporarily with margin right, meeds
+patching up
+*/
+
+.bodies-div {
+  display: flex;
+  justify-content:center;
 }
