@@ -11,4 +11,5 @@ function activateSettings() {
         nav.style.width = "300px";
         isSettingOpen = true;
     }
+    //aleks making a change to test github push 
 }
