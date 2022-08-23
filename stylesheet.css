@@ -7,3 +7,64 @@ ul, ol {margin: 1em 0; padding-left: 40px}
 p, figure {margin: 1em 0}
 a img {border: none}
 sup, sub {line-height: 0}
+
+
+html {
+    background-color: #001D26;
+}
+
+
+
+
+
+/*
+      Class selectors for all content within the a class
+ */
+
+.Nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    padding-top: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    padding-top: 10px;
+}
+.Button {
+    width: 200px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #0081D5;
+    text-align: center;
+    font-size: 1.2rem;
+    color: white;
+}
+
+#Button2 {
+    background-color: #03BD5B;
+}
+
+#Button3 {
+    background-color: #D2335B;
+}
+
+.Bodies {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+.FrontBody {
+    width: 20rem;
+}
+
+.BackBody {
+    width: 20rem;
+}
