@@ -102,6 +102,7 @@ test is placeholder for future settings, feel free to remove as needed
     font-size: 36px;
     padding-right: 50px;
 }
+
 #settings {
   display: flex;
   justify-content: left;
@@ -111,6 +112,8 @@ test is placeholder for future settings, feel free to remove as needed
 /* 
 flexbox issue, resolved temporarily with margin right, meeds
 patching up
+
+@Adam, Adjusted the Flexbox to be on a z-index, and changed to a fixed layout
 */
 
 .bodies-div {
@@ -120,6 +123,6 @@ patching up
 
 #settingsButton {
     position: fixed;
-    bottom: 15px;
+    bottom: 90%;
     right: 15px;
 }
