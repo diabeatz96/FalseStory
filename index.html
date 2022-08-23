@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="sidebar.js"></script>
 </head>
 
 
@@ -30,10 +31,9 @@
         </a>
     </div>
 
-<div class = "bodies-settings-div">
 
-    <div class = "settings">
-        <p class = "test">Settings Placeholder</p>
+    <div id = "settings">
+        <p id = "test">Settings Placeholder</p>
     </div>
 
     <div class = "bodies-div">
@@ -53,8 +53,9 @@
         </section>
     </div>
 
-</div>
-
+    <a href="javascript:void(0)" id="settingsButton" onclick="activateSettings()">
+        <img src="assests/gear.svg">
+    </a>
 </body>
 
 </html>

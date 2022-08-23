@@ -79,27 +79,30 @@ nav {
     width: 20rem;
 }
 
-.bodies-settings-div {
-  display: flex;
-  flex-direction: row;
-  justify-content: left;
-}
-
 /*
 test is placeholder for future settings, feel free to remove as needed
 */
 
-.test {  
+#test {
+    position: absolute;
   color: rgb(186, 186, 186);
+    height: 50%;
   background-color: #425663;
   font-size: 24px;
   text-align:center;
-  width: 300px;
-  border: solid #6e8593;
+  z-index: 1;
+  overflow-x: hidden;
+  width: 0;
   margin-left: 10px;
+  padding-top: 50px;
+  transition: 1s;
 }
 
-.settings {
+#settings .closeSettings {
+    font-size: 36px;
+    padding-right: 50px;
+}
+#settings {
   display: flex;
   justify-content: left;
   margin-right: 330px;
@@ -113,4 +116,10 @@ patching up
 .bodies-div {
   display: flex;
   justify-content:center;
+}
+
+#settingsButton {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
 }
