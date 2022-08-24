@@ -1,4 +1,3 @@
 
-//let lift = document.getElementById("lift").value;
-//let x = 10;
+let lift = document.getElementById('percentage')
 console.log(lift);
