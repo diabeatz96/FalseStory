@@ -16,8 +16,8 @@ function boxSettings(element, e) {
     element.style.height = "150px";
     element.style.backgroundColor = "white";
     element.style.position = "absolute";
-    element.style.top = e.clientY + 50 + 'px';
-    element.style.left = e.clientX + 100 + 'px';
+    element.style.top = e.clientY + 0.5 + 'em';
+    element.style.left = e.clientX + 0.4 + 'em';
 }
 
 
