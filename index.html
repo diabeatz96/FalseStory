@@ -34,7 +34,7 @@
 
     <div id = "settings">
         <div id = "settingsBar"> Settings
-            <p id = "account" > Have an account? Sign in</p>
+            <p class = "account" > Have an account? Sign in</p>
 
             <form>
                 <p>
@@ -55,19 +55,19 @@
             <!-- height and weight box  -->
             <div>
                 <form>
-                    <!-- height input -->   
+                    <!-- height input -->
                     <div style="width: 55%; float:left; height:80px; margin:1px">
                         <label for="height"> height: </label>
                         <input type="text" id="height" name="height" size="5">
                         <br>
                         <br>
-                        <!-- weight input -->  
+                        <!-- weight input -->
                         <label for="weight"> weight: </label>
                         <input type="text" id="weight" name="weight" size="5">
                     </div>
 
                     <div style="width: 30%; float:left; height:80px; margin:3px">
-                        <!-- height button -->        
+                        <!-- height button -->
                         cm
                         <label class="switch">
                             <input type="checkbox" checked>
@@ -77,12 +77,12 @@
                         <br>
                         <br>
 
-                        <!-- weight button -->     
+                        <!-- weight button -->
                         kg
                         <label class="switch">
                             <input type="checkbox" checked>
                             <span class="slider round"></span>
-                        </label> 
+                        </label>
                         lb
 
                     </div>
@@ -100,14 +100,14 @@
 
                     <input type="radio" id="woman" name="bodyType" value="woman">
                     <label for="woman">woman</label><br>
-                    
+
                     <input type="radio" id="nonbinary" name="bodyType" value="nonbinary">
                     <label for="nonbinary">nonbinary</label>
-                </form> 
-            </div>    
-            
-            <p id = "account" >  
-                <a href="url"> create an account</a>
+                </form>
+            </div>
+
+            <p class = "account" >
+                <a href="https://www.google.com"> create an account</a>
             </p>
         </div>
     </div>
@@ -115,13 +115,13 @@
     <div class = "bodies-div">
         <section class = "Bodies">
 
-            <object type="image/svg+xml" data="assests/body-front.svg" class="FrontBody">
+            <object type="image/svg+xml" data="assests/body-front.svg" id ="FrontBody">
 
             </object>
 
 
             <figure>
-                <object type="image/svg+xml" data="assests/body-back.svg" class="BackBody">
+                <object type="image/svg+xml" data="assests/body-back.svg" id = "BackBody">
 
                 </object>
             </figure>
@@ -130,8 +130,9 @@
     </div>
 
     <a href="javascript:void(0)" id="settingsButton" onclick="activateSettings()">
-        <img src="assests/gear.svg">
+        <img src="assests/gear.svg" alt = "Gear Icon">
     </a>
 </body>
 
+<script type="text/javascript" src="muscles.js"></script>
 </html>

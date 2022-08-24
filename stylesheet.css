@@ -71,24 +71,24 @@ nav {
     width: 100%;
     height: 100%;
 }
-.FrontBody {
+#FrontBody {
     width: 20rem;
 }
 
-.BackBody {
+#BackBody {
     width: 20rem;
 }
 
 
-#settingsBar {  
-  position: absolute; 
+#settingsBar {
+  position: absolute;
   color: rgb(186, 186, 186);
   height: 58%;
   background-color: #425663;
   font-size: 24px;
   text-align:center;
   z-index: 1;
-  overflow-x: hidden; 
+  overflow-x: hidden;
   width: 0;
   margin-left: 10px;
   padding-top: 35px;
@@ -106,13 +106,13 @@ nav {
   margin-right: 330px;
 }
 
-#account { 
-  font-size: 12px; 
+.account {
+  font-size: 12px;
   text-align:center;
   margin-top: 25px;
 }
 
-form  { 
+form  {
     font-size: 16px;
 }
 
@@ -129,8 +129,8 @@ a:hover {
 }
 
 input[type=submit] {
-    padding:5px 15px; 
-    background:rgb(208, 210, 213); 
+    padding:5px 15px;
+    background:rgb(208, 210, 213);
     border:0 none;
     font-size: 12px;
     position: relative;
@@ -153,11 +153,11 @@ input[type=submit] {
     height: 20px;
 }
 
-  
+
 .slider {
     position: absolute;
     cursor: pointer;
-    top: 0px;
+    top: 0;
     left: 0;
     right: 0;
     bottom: 0;
@@ -165,7 +165,7 @@ input[type=submit] {
     -webkit-transition: .4s;
     transition: .4s;
 }
-  
+
 .slider:before {
     position: absolute;
     content: "";
@@ -177,11 +177,11 @@ input[type=submit] {
     -webkit-transition: .4s;
     transition: .4s;
 }
-  
+
 input:checked + .slider {
     background-color: #2196F3;
 }
-  
+
 input:checked + .slider:before {
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
@@ -191,12 +191,12 @@ input:checked + .slider:before {
 .slider.round {
     border-radius: 34px;
 }
-  
+
 .slider.round:before {
     border-radius: 50%;
 }
 
-/* 
+/*
 flexbox issue, resolved temporarily with margin right, needs
 patching up
 
@@ -212,4 +212,14 @@ patching up
     position: fixed;
     bottom: 90%;
     right: 15px;
+}
+
+
+/*
+    Info Box from JavaScript
+ */
+
+#infobox {
+    box-shadow: rgba(141, 2, 255, 0.3) 0 0 0 3px;
+    border-radius: 20px;
 }
