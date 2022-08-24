@@ -19,9 +19,8 @@ function boxSettings(element, e, body = true) {
     element.style.position = "absolute";
     element.style.zIndex = "1";
     element.style.color = "white";
-    if(body) {
-        element.style.top = e.clientY + 40 + 'px';
-    } else {
+
+    if(!body) {
         element.style.backgroundImage = "linear-gradient(to right, #fc5c7d, #6a82fb)"
     }
 }
