@@ -2,6 +2,55 @@
 body{
     background-color: #182a36;
 }
+/*
+      Class selectors for all content within the a class
+ */
+
+ .Nav {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    padding-top: 10px;
+    margin-top: 15px;
+}
+.Button {
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #0081D5;
+    text-align: center;
+    font-size: 1.2rem;
+    color: white;
+    transition: opacity 0.25s;
+    margin-right: 25px;
+}
+
+.Button:hover {
+  opacity: 0.85;
+}
+
+.Button:active {
+  opacity: 0.7;
+}
+
+#Button2 {
+    background-color: #03BD5B;
+}
+
+#Button3 {
+    background-color: #D2335B;
+}
+
 form {
     color: rgb(186, 186,186);
     align-items: center;
@@ -13,17 +62,19 @@ form {
 	margin: 0 auto;		
 	border-radius: 20px;
 	padding: 10px;
+    margin-bottom: 50px;
   }
   header{
-    text-align: left;
+    text-align: center;
     background-color: #d1e0e0;
+    line-height: 100px;
     color: #63666A;
 	width: 330px;
 	height: 100px;
-	border-radius: 20px;
-	margin: 0 auto;	
+	border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+	margin: 0;	
 	font-size: xx-large;
-    bottom: 10px;
   }
   form input{
     border-radius: 6px;
@@ -33,6 +84,12 @@ form {
   label,input{
     display: flex;
     flex-direction: column;
-    width: 330px;
+    width: 322px;
     height: 20px;
+    text-align: center;
+    margin: 0;
   }
+  label{
+    margin-top: 15px;
+  }
+  
