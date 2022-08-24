@@ -79,22 +79,19 @@ nav {
     width: 20rem;
 }
 
-/*
-test is placeholder for future settings, feel free to remove as needed
-*/
 
-#test {
-    position: absolute;
+#settingsBar {  
+  position: absolute; 
   color: rgb(186, 186, 186);
-    height: 50%;
+  height: 58%;
   background-color: #425663;
   font-size: 24px;
   text-align:center;
   z-index: 1;
-  overflow-x: hidden;
+  overflow-x: hidden; 
   width: 0;
   margin-left: 10px;
-  padding-top: 50px;
+  padding-top: 35px;
   transition: 1s;
 }
 
@@ -109,8 +106,98 @@ test is placeholder for future settings, feel free to remove as needed
   margin-right: 330px;
 }
 
+#account { 
+  font-size: 12px; 
+  text-align:center;
+  margin-top: 25px;
+}
+
+form  { 
+    font-size: 16px;
+}
+
+a:link {
+    color: #0081D5;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+a:hover {
+    color: #03BD5B;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+input[type=submit] {
+    padding:5px 15px; 
+    background:rgb(208, 210, 213); 
+    border:0 none;
+    font-size: 12px;
+    position: relative;
+    margin: 0 0 25px 185px;
+    border-radius: 34px;
+}
+
+#bodyType {
+    font-size: 16px;
+    padding: 25px 0 0 16px;
+    text-align: left;
+}
+
+/* Toggle Switch style: */
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+}
+
+  
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 11px;
+    width: 11px;
+    left: 1px;
+    bottom: 5px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+input:checked + .slider {
+    background-color: #2196F3;
+}
+  
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+  
+.slider.round:before {
+    border-radius: 50%;
+}
+
 /* 
-flexbox issue, resolved temporarily with margin right, meeds
+flexbox issue, resolved temporarily with margin right, needs
 patching up
 
 @Adam, Adjusted the Flexbox to be on a z-index, and changed to a fixed layout
