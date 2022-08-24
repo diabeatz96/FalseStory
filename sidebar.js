@@ -2,7 +2,7 @@ let isSettingOpen = false;
 
 
 function activateSettings() {
-    let nav = document.getElementById("test");
+    let nav = document.getElementById("settingsBar");
     console.log("This is getting clicked")
     if(isSettingOpen) {
         nav.style.width = "0px";
@@ -11,5 +11,5 @@ function activateSettings() {
         nav.style.width = "300px";
         isSettingOpen = true;
     }
-    //aleks making a change to test github push 
+    const input = document.createElement("input");
 }
