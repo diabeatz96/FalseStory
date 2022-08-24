@@ -1,10 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="calculator.css" />
+    <script defer src="calculator.js"></script>
+    <title>1RM Calculator</title>
+  </head>
+  <body>
+    <div class="Nav">
+      <a href="https://www.google.com/" target="_blank">
+        <div class="Button">
+          <nav>Muscle Groups</nav>
+        </div>
+      </a>
+      <a href="#" target="_blank">
+        <div class="Button" id="Button2">
+          <nav>1RM Calculator</nav>
+        </div>
+      </a>
+      <a href="https://www.google.com/" target="_blank">
+        <div class="Button" id="Button3">
+          <nav>About Us</nav>
+        </div>
+      </a>
+    </div>
+    <form>
+      <h1>Calculator</h1>
+      <header id="screen"></header>
+      <section class="lift-selection">
+        <label for="lift">Please specify exercise </label>
+        <input type="text" list="lifts" id="lift" name="lift" />
+        <datalist id="lifts">
+          <option value="Bench Press"></option>
+          <option value="Biceps Arm Curl"></option>
+          <option value="Crunch"></option>
+          <option value="Deadlift"></option>
+          <option value="Lat Pulldown"></option>
+          <option value="Leg Press"></option>
+          <option value="Overhead Press"></option>
+          <option value="Squat"></option>
+          <option value="Triceps Pushdown"></option>
+          <option value="Seated Cable Row"></option>
+        </datalist>
+      </section>
 
-</body>
+      <section class="weight-amount">
+        <label for="weight">Weight</label>
+        <input id="weight" name="weight" type="number" step="1" min="0" />
+      </section>
+
+      <section class="rep-number">
+        <label for="repetitions">Repetitions</label>
+        <input
+          id="repetitions"
+          name="repetitions"
+          type="number"
+          step="1"
+          min="0"
+        />
+      </section>
+      <section class="percentage-1RM">
+        <label for="percentage">Percentage of 1RM </label>
+        <input
+          id="percentage"
+          name="percentage"
+          type="number"
+          step="1"
+          min="0"
+          max="100"
+        />
+      </section>
+      <section class="submission">
+        <input type="submit" value="=" />
+      </section>
+    </form>
+  </body>
 </html>
