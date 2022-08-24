@@ -6,29 +6,53 @@
     <title>Calculator</title>
   </head>
   <body>
+    <h1>Calculator</h1>
+    <header id="screen"></header>
     <form>
-      <h1>Calculator</h1>
+      <section class="lift-selection">
+        <label for="lift">Please specify exercise </label>
+        <input type="text" list="lifts" id="lift" name="lift" />
+        <datalist id="lifts">
+          <option value="Bench Press"></option>
+          <option value="Biceps Arm Curl"></option>
+          <option value="Crunch"></option>
+          <option value="Deadlift"></option>
+          <option value="Lat Pulldown"></option>
+          <option value="Leg Press"></option>
+          <option value="Overhead Press"></option>
+          <option value="Squat"></option>
+          <option value="Triceps Pushdown"></option>
+          <option value="Seated Cable Row"></option>
+        </datalist>
+      </section>
 
-      <label for="lift">Please specify exercise </label>
-      <input type="text" list="lifts" id="lift" name="lift" />
-      <datalist id="lifts">
-        <option value="Bench Press"></option>
-        <option value="Biceps Arm Curl"></option>
-        <option value="Crunch"></option>
-        <option value="Deadlift"></option>
-        <option value="Lat Pulldown"></option>
-        <option value="Leg Press"></option>
-        <option value="Overhead Press"></option>
-        <option value="Squat"></option>
-        <option value="Triceps Pushdown"></option>
-        <option value="Seated Cable Row"></option>
-      </datalist>
+      <section class="weight-amount">
+        <label for="weight">Weight</label>
+        <input id="weight" name="weight" type="number" step="1" min="0" />
+      </section>
 
-      <label for="weight">Weight</label>
-      <input id="weight" name="weight" type="number" step="1" />
-
-      <label for="repetitions">Repetitions</label>
-      <input id="repetitions" name="repetitions" type="number" step="1" />
+      <section class="rep-number">
+        <label for="repetitions">Repetitions</label>
+        <input
+          id="repetitions"
+          name="repetitions"
+          type="number"
+          step="1"
+          min="0"
+        />
+      </section>
+      <section class="percentage-1RM">
+        <label for="percentage">Percentage of 1RM </label>
+        <input
+          id="percentage"
+          name="percentage"
+          type="number"
+          step="1"
+          min="0"
+          max="100"
+        />
+        <span>%</span>
+      </section>
     </form>
   </body>
 </html>
