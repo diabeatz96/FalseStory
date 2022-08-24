@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="calculator.css" />
-    <script src="calculator.js"></script>
+    <script type="text/javascript" src="calculator.js"></script>
     <title>1RM Calculator</title>
   </head>
   <body>
@@ -26,7 +26,7 @@
     </div>
     <form>
       <h1>Calculator</h1>
-      <header id="screen">20lb</header>
+      <header id="screen"></header>
       <section class="lift-selection">
         <label for="lift">Please specify exercise </label>
         <input type="text" list="lifts" id="lift" name="lift" />
@@ -70,7 +70,9 @@
           max="100"
         />
       </section>
-      <section class="submission"></section>
+      <section class="submission">
+        <input type="submit" value="=" />
+      </section>
     </form>
   </body>
 </html>

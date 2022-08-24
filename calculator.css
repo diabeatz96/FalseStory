@@ -92,4 +92,14 @@ form {
   label{
     margin-top: 15px;
   }
+  .submission input{
+    text-align: center;
+    align-self: center;
+    width: 60px;
+    height: 30px;
+    margin-top: 25px;
+    margin-left: 128px;
+    font-size: 22px;
+    cursor: pointer;
+  }
   
