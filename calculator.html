@@ -8,7 +8,8 @@
   <body>
     <form>
       <h1>Calculator</h1>
-      <label for="lift">Please specify exercise</label>
+
+      <label for="lift">Please specify exercise </label>
       <input type="text" list="lifts" id="lift" name="lift" />
       <datalist id="lifts">
         <option value="Bench Press"></option>
@@ -22,6 +23,12 @@
         <option value="Triceps Pushdown"></option>
         <option value="Seated Cable Row"></option>
       </datalist>
+
+      <label for="weight">Weight</label>
+      <input id="weight" name="weight" type="number" step="1" />
+
+      <label for="repetitions">Repetitions</label>
+      <input id="repetitions" name="repetitions" type="number" step="1" />
     </form>
   </body>
 </html>
