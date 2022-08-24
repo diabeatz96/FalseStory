@@ -15,8 +15,10 @@ submission.addEventListener("click", () => {
       Write your code here on logic for weight repetitions and specify exercise.
         */
 
-       let oneRM = (((weight.value)*(repetitions.value)*0.0333) + weight.value);
-       let percentageRM = ((percentage.value)/100)*oneRM;
+
+       let oneRM = weight.value * (1 + (repetitions.value/30));
+       let percentageRM = ((percentage.value)/100) * oneRM ;
+       console.log(oneRM)
        screen.textContent = percentageRM.toString();
 
     }
