@@ -220,6 +220,7 @@ patching up
  */
 
 #infobox {
-    box-shadow: rgba(141, 2, 255, 0.3) 0 0 0 3px;
+    box-shadow: rgb(34, 56, 77) 0px 2px 4px 0px inset;
     border-radius: 20px;
+    background-image: linear-gradient(-20deg, #00cdac 0%, #8ddad5 100%);
 }
