@@ -15,20 +15,30 @@
 <body>
     <div class="Nav">
         <a href = "#">
-        <div class="Button">
+        <div class="Button hover-slide-up" id = "Button1">
             <nav> Muscle Groups </nav>
         </div>
         </a>
         <a href = "/calculator.html" target="_blank">
-        <div class = "Button" id = "Button2">
+        <div class = "Button hover-slide-up" id = "Button2">
             <nav> 1RM Calculator </nav>
         </div>
         </a>
         <a href = "https://www.google.com/" target="_blank">
-        <div class = "Button" id = "Button3">
+        <div class = "Button hover-slide-up" id = "Button3">
             <nav> About Us </nav>
         </div >
         </a>
+        <a href = "https://www.google.com/" target="_blank">
+            <div class = "Button hover-slide-up" id = "Button4">
+                <nav> Fitness Data </nav>
+            </div >
+        </a>
+
+        <a href="javascript:void(0)" id="settingsButton" onclick="activateSettings()">
+            <img src="assests/gear.svg" alt = "Gear Icon">
+        </a>
+
     </div>
 
 
@@ -129,9 +139,10 @@
         </section>
     </div>
 
-    <a href="javascript:void(0)" id="settingsButton" onclick="activateSettings()">
-        <img src="assests/gear.svg" alt = "Gear Icon">
-    </a>
+    <div class = "logo">
+        <img src="assests/Logo.png"  width="50%" alt ="arm logo">
+    </div>
+
 </body>
 
 <script type="text/javascript" src="muscles.js"></script>
