@@ -1,5 +1,6 @@
 let frontbody = document.getElementById('FrontBody');
 let backbody = document.getElementById('BackBody')
+const box = document.getElementById("infobox");
 
 
 /*
@@ -38,19 +39,39 @@ frontbody.addEventListener("load", () => {
      */
 
     doc.querySelector("#head").addEventListener("mouseenter", (e) => {
+        if(box) {
+            box.remove();
+        }
         console.log("Mouse is clicked!");
+        /*
+               Creating Box That Contains Informatio
+         */
         const newBox = document.createElement("div");
         boxSettings(newBox, e);
+        /*
+            Creating header for element.
+        */
         const text = document.createElement("h2");
         text.innerText = "The Mind";
         text.style.textAlign = "Center";
         newBox.append(text);
-        document.querySelector(".Bodies").append(newBox);
-    })
+        /*
+            Creating List and appending it to end of document.
+            First we create ul to hold the list, then we edit the innerHTML of the content,
+            Write whatever inner html you want to each link, create new listItem by making new variable
+            listItem2 = document.createElement("li);
 
-    doc.querySelector("#head").addEventListener("mouseleave", () => {
-        const box = document.getElementById("infobox");
-        box.remove();
+            if you want to adjust styling, do listItem1.setAttribute("id", "listitem") and write css in stylesheet.\
+
+            Make sure to append to listItems to listHeaders.
+        */
+
+        const listHeader = document.createElement("ul");
+        const listItem1 = document.createElement("li");
+        listItem1.innerHTML = "<a href = \"https://www.google.com\"> Click Here! </a>  "
+        newBox.append(listHeader);
+        listHeader.append(listItem1);
+        document.querySelector(".Bodies").append(newBox);
     })
 
     doc.querySelector("#head").addEventListener("click", () => {
@@ -67,6 +88,9 @@ frontbody.addEventListener("load", () => {
 
 
     doc.querySelector("#abdomen").addEventListener("mouseenter", (e) => {
+        if(box) {
+            box.remove();
+        }
         console.log("Mouse is clicked!");
         const newBox = document.createElement("div");
         boxSettings(newBox, e);
@@ -76,11 +100,6 @@ frontbody.addEventListener("load", () => {
         text.style.textAlign = "Center";
         newBox.append(text);
 
-    })
-
-    doc.querySelector("#abdomen").addEventListener("mouseleave", () => {
-        const box = document.getElementById("infobox");
-        box.remove();
     })
 
     doc.querySelector("#abdomen").addEventListener("click", () => {
@@ -97,6 +116,9 @@ frontbody.addEventListener("load", () => {
 
 
     doc.querySelector("#trapezoid").addEventListener("mouseenter", (e) => {
+        if(box) {
+            box.remove();
+        }
         console.log("Mouse is clicked!");
         const newBox = document.createElement("div");
         boxSettings(newBox, e);
@@ -126,6 +148,9 @@ frontbody.addEventListener("load", () => {
 
 
     doc.querySelector("#pectorals").addEventListener("mouseenter", (e) => {
+        if(box) {
+            box.remove();
+        }
         console.log("Mouse is clicked!");
         const newBox = document.createElement("div");
         boxSettings(newBox, e);
@@ -134,11 +159,6 @@ frontbody.addEventListener("load", () => {
         text.innerText = "Pectorals";
         text.style.textAlign = "Center";
         newBox.append(text);
-    })
-
-    doc.querySelector("#pectorals").addEventListener("mouseleave", () => {
-        const box = document.getElementById("infobox");
-        box.remove();
     })
 
     doc.querySelector("#pectorals").addEventListener("click", () => {
@@ -156,6 +176,9 @@ frontbody.addEventListener("load", () => {
 
 
     doc.querySelector("#quadriceps").addEventListener("mouseenter", (e) => {
+        if(box) {
+            box.remove();
+        }
         console.log("Mouse is clicked!");
         const newBox = document.createElement("div");
         boxSettings(newBox, e);
@@ -164,11 +187,6 @@ frontbody.addEventListener("load", () => {
         text.innerText = "Quadriceps";
         text.style.textAlign = "Center";
         newBox.append(text);
-    })
-
-    doc.querySelector("#quadriceps").addEventListener("mouseleave", () => {
-        const box = document.getElementById("infobox");
-        box.remove();
     })
 
     doc.querySelector("#quadriceps").addEventListener("click", () => {
@@ -185,6 +203,9 @@ frontbody.addEventListener("load", () => {
 
 
     doc.querySelector("#tibialis").addEventListener("mouseenter", (e) => {
+        if(box) {
+            box.remove();
+        }
         console.log("Mouse is clicked!");
         const newBox = document.createElement("div");
         boxSettings(newBox, e);
@@ -193,11 +214,6 @@ frontbody.addEventListener("load", () => {
         text.innerText = "Tibialis";
         text.style.textAlign = "Center";
         newBox.append(text);
-    })
-
-    doc.querySelector("#tibialis").addEventListener("mouseleave", () => {
-        const box = document.getElementById("infobox");
-        box.remove();
     })
 
     doc.querySelector("#tibialis").addEventListener("click", () => {
@@ -215,6 +231,9 @@ frontbody.addEventListener("load", () => {
 
 
     doc.querySelector("#gastrocnemius").addEventListener("mouseenter", (e) => {
+        if(box) {
+            box.remove();
+        }
         console.log("Mouse is clicked!");
         const newBox = document.createElement("div");
         boxSettings(newBox, e);
@@ -223,11 +242,6 @@ frontbody.addEventListener("load", () => {
         text.innerText = "Gastrocnemius";
         text.style.textAlign = "Center";
         newBox.append(text);
-    })
-
-    doc.querySelector("#gastrocnemius").addEventListener("mouseleave", () => {
-        const box = document.getElementById("infobox");
-        box.remove();
     })
 
     doc.querySelector("#gastrocnemius").addEventListener("click", () => {
@@ -245,6 +259,9 @@ frontbody.addEventListener("load", () => {
 
 
     doc.querySelector("#abductors").addEventListener("mouseenter", (e) => {
+        if(box) {
+            box.remove();
+        }
         console.log("Mouse is clicked!");
         const newBox = document.createElement("div");
         boxSettings(newBox, e);
@@ -253,11 +270,6 @@ frontbody.addEventListener("load", () => {
         text.innerText = "Abductors";
         text.style.textAlign = "Center";
         newBox.append(text);
-    })
-
-    doc.querySelector("#abductors").addEventListener("mouseleave", () => {
-        const box = document.getElementById("infobox");
-        box.remove();
     })
 
     doc.querySelector("#abductors").addEventListener("click", () => {
@@ -274,6 +286,9 @@ frontbody.addEventListener("load", () => {
 
 
     doc.querySelector("#biceps").addEventListener("mouseenter", (e) => {
+        if(box) {
+            box.remove();
+        }
         console.log("Mouse is clicked!");
         const newBox = document.createElement("div");
         boxSettings(newBox, e);
@@ -282,11 +297,6 @@ frontbody.addEventListener("load", () => {
         text.innerText = "Biceps";
         text.style.textAlign = "Center";
         newBox.append(text);
-    })
-
-    doc.querySelector("#biceps").addEventListener("mouseleave", () => {
-        const box = document.getElementById("infobox");
-        box.remove();
     })
 
     doc.querySelector("#biceps").addEventListener("click", () => {
@@ -303,6 +313,9 @@ frontbody.addEventListener("load", () => {
 
 
     doc.querySelector("#deltoids").addEventListener("mouseenter", (e) => {
+        if(box) {
+            box.remove();
+        }
         console.log("Mouse is clicked!");
         const newBox = document.createElement("div");
         boxSettings(newBox, e);
@@ -311,11 +324,6 @@ frontbody.addEventListener("load", () => {
         text.innerText = "Deltoids";
         text.style.textAlign = "Center";
         newBox.append(text);
-    })
-
-    doc.querySelector("#deltoids").addEventListener("mouseleave", () => {
-        const box = document.getElementById("infobox");
-        box.remove();
     })
 
     doc.querySelector("#deltoids").addEventListener("click", () => {
@@ -332,6 +340,9 @@ frontbody.addEventListener("load", () => {
 
 
     doc.querySelector("#flexors").addEventListener("mouseenter", (e) => {
+        if(box) {
+            box.remove();
+        }
         console.log("Mouse is clicked!");
         const newBox = document.createElement("div");
         boxSettings(newBox, e);
@@ -340,11 +351,6 @@ frontbody.addEventListener("load", () => {
         text.innerText = "Flexors";
         text.style.textAlign = "Center";
         newBox.append(text);
-    })
-
-    doc.querySelector("#flexors").addEventListener("mouseleave", () => {
-        const box = document.getElementById("infobox");
-        box.remove();
     })
 
     doc.querySelector("#flexors").addEventListener("click", () => {
@@ -369,6 +375,9 @@ backbody.addEventListener("load", () => {
      */
 
     doc.querySelector("#backdeltoids").addEventListener("mouseenter", (e) => {
+        if(box) {
+            box.remove();
+        }
         console.log("Mouse is clicked!");
         const newBox = document.createElement("div");
         boxSettings(newBox, e, false);
@@ -377,11 +386,6 @@ backbody.addEventListener("load", () => {
         text.innerText = "Back Deltoids";
         text.style.textAlign = "Center";
         newBox.append(text);
-    })
-
-    doc.querySelector("#backdeltoids").addEventListener("mouseleave", () => {
-        const box = document.getElementById("infobox");
-        box.remove();
     })
 
     doc.querySelector("#backdeltoids").addEventListener("click", () => {
@@ -398,6 +402,9 @@ backbody.addEventListener("load", () => {
      */
 
     doc.querySelector("#triceps").addEventListener("mouseenter", (e) => {
+        if(box) {
+            box.remove();
+        }
         console.log("Mouse is clicked!");
         const newBox = document.createElement("div");
         boxSettings(newBox, e, false);
@@ -406,11 +413,6 @@ backbody.addEventListener("load", () => {
         text.innerText = "Triceps";
         text.style.textAlign = "Center";
         newBox.append(text);
-    })
-
-    doc.querySelector("#triceps").addEventListener("mouseleave", () => {
-        const box = document.getElementById("infobox");
-        box.remove();
     })
 
     doc.querySelector("#triceps").addEventListener("click", () => {
@@ -428,6 +430,9 @@ backbody.addEventListener("load", () => {
      */
 
     doc.querySelector("#lowerleg").addEventListener("mouseenter", (e) => {
+        if(box) {
+            box.remove();
+        }
         console.log("Mouse is clicked!");
         const newBox = document.createElement("div");
         boxSettings(newBox, e, false);
@@ -436,11 +441,6 @@ backbody.addEventListener("load", () => {
         text.innerText = "Lower Legs";
         text.style.textAlign = "Center";
         newBox.append(text);
-    })
-
-    doc.querySelector("#lowerleg").addEventListener("mouseleave", () => {
-        const box = document.getElementById("infobox");
-        box.remove();
     })
 
     doc.querySelector("#lowerleg").addEventListener("click", () => {
@@ -457,6 +457,9 @@ backbody.addEventListener("load", () => {
      */
 
     doc.querySelector("#hamstrings").addEventListener("mouseenter", (e) => {
+        if(box) {
+            box.remove();
+        }
         console.log("Mouse is clicked!");
         const newBox = document.createElement("div");
         boxSettings(newBox, e, false);
@@ -486,6 +489,9 @@ backbody.addEventListener("load", () => {
      */
 
     doc.querySelector("#gluteus").addEventListener("mouseenter", (e) => {
+        if(box) {
+            box.remove();
+        }
         console.log("Mouse is clicked!");
         const newBox = document.createElement("div");
         boxSettings(newBox, e, false);
@@ -494,11 +500,6 @@ backbody.addEventListener("load", () => {
         text.innerText = "Gluteus Maximus";
         text.style.textAlign = "Center";
         newBox.append(text);
-    })
-
-    doc.querySelector("#gluteus").addEventListener("mouseleave", () => {
-        const box = document.getElementById("infobox");
-        box.remove();
     })
 
     doc.querySelector("#gluteus").addEventListener("click", () => {
@@ -515,6 +516,9 @@ backbody.addEventListener("load", () => {
      */
 
     doc.querySelector("#lowerback").addEventListener("mouseenter", (e) => {
+        if(box) {
+            box.remove();
+        }
         console.log("Mouse is clicked!");
         const newBox = document.createElement("div");
         boxSettings(newBox, e, false);
@@ -523,11 +527,6 @@ backbody.addEventListener("load", () => {
         text.innerText = "Lower Back";
         text.style.textAlign = "Center";
         newBox.append(text);
-    })
-
-    doc.querySelector("#lowerback").addEventListener("mouseleave", () => {
-        const box = document.getElementById("infobox");
-        box.remove();
     })
 
     doc.querySelector("#lowerback").addEventListener("click", () => {
@@ -544,6 +543,9 @@ backbody.addEventListener("load", () => {
      */
 
     doc.querySelector("#trapezoidback").addEventListener("mouseenter", (e) => {
+        if(box) {
+            box.remove();
+        }
         console.log("Mouse is clicked!");
         const newBox = document.createElement("div");
         boxSettings(newBox, e, false);
@@ -552,11 +554,6 @@ backbody.addEventListener("load", () => {
         text.innerText = "Trapezoid Back";
         text.style.textAlign = "Center";
         newBox.append(text);
-    })
-
-    doc.querySelector("#trapezoidback").addEventListener("mouseleave", () => {
-        const box = document.getElementById("infobox");
-        box.remove();
     })
 
     doc.querySelector("#trapezoidback").addEventListener("click", () => {
