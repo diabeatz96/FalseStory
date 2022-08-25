@@ -1,26 +1,26 @@
+
 let submission = document.querySelector(".submission");
 
 const exercise = document.querySelector("#lift");
-const weight = document.querySelector("#weight");
-const repetitions = document.querySelector("#repetitions");
-const percentage = document.querySelector("#percentage");
+const weight_ = document.querySelector("#weight");
+const repetitions_ = document.querySelector("#repetitions");
+const percentage_ = document.querySelector("#percentage");
+
+let weight = parseFloat(weight_.value);
+let repetitions = parseFloat(repetitions_.value);
+let percentage = parseFloat(percentage_.value);
 
 submission.addEventListener("click", () => {
     const screen = document.querySelector("#screen")
-    if(!exercise.value || !weight.value || !repetitions.value || !percentage.value) {
+    if(!exercise.value || !weight || !repetitions || !percentage) {
         screen.textContent = "Fill All Fields"
     } else {
-
         /*
       Write your code here on logic for weight repetitions and specify exercise.
         */
-
-
-       let oneRM = weight.value * (1 + (repetitions.value/30));
-       let percentageRM = ((percentage.value)/100) * oneRM ;
-       console.log(oneRM)
-       screen.textContent = percentageRM.toString();
-
+      let oneRM = weight * (1 + (repetitions/30));
+      let percentageRM = (((percentage)/100) * oneRM).toFixed(2);
+      screen.textContent = percentageRM.toString();
     }
 
 })
