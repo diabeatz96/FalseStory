@@ -52,12 +52,50 @@ nav {
 section{
     background-color: #425663;
     color: rgb(186, 186,186);
-    display: flex;
-
-}
-h1{
+    align-items: center;
     text-align: center;
 }
 .description{
-    text-align: center;
+    text-align: left;
+    overflow: hidden;
+    padding-left: 20px;
+    line-height: 30px;
+    font-size: 18px;
+}
+img{
+    float: left;
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+    margin-left: 20px;
+    margin-top: 0;
+    box-shadow: -10px 30px 30px #000;
+}
+#adam{
+    margin: 20px;
+    border:2px solid;
+    border-color: #fff;
+    height: 300px;
+    box-shadow: 0 0 40px #000;
+}
+#aleks{
+    margin: 20px;
+    border:2px solid;
+    border-color: #fff;
+    height: 300px;
+    box-shadow: 0 0 40px #000;
+}
+#jon{
+    margin: 20px;
+    border:2px solid;
+    border-color: #fff;
+    height: 300px;
+    box-shadow: 0 0 40px #000;
+}
+#affat{
+    margin: 20px;
+    border:2px solid;
+    border-color: #fff;
+    height: 300px;
+    box-shadow: 0 0 40px #000;
 }
