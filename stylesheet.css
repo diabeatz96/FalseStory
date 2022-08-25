@@ -68,21 +68,21 @@ nav {
 
 #Button1:hover {
     background-color: #3e90cb;
-    transition: background-color 1s;
+    transition: background-color 0.25s;
 }
 #Button2:hover {
     background-color: #3e90cb;
-    transition: background-color 1s;
+    transition: background-color 0.25s;
 }
 
 #Button3:hover {
     background-color: #3e90cb;
-    transition: background-color 1s;
+    transition: background-color 0.25s;
 }
 
 #Button4:hover {
     background-color: #3e90cb;
-    transition: background-color 1s;
+    transition: background-color 0.25s;
 }
 
 .Bodies {
@@ -101,19 +101,25 @@ nav {
 }
 
 .logo {
-    position: fixed;
+  float: left;
 }
 
-.logo img {
-    opacity: 40%;
+.logo-img {
+    opacity: 90%;
+    object-fit: left;
+    display: inline;
+    float: left;
+    width: 170px;
+    margin-left: 0px;
 }
 #settingsBar {
   position: absolute;
   color: rgb(255, 255, 255);
-  height: 65%;
+  height: 70%;
   background-color: #425663;
   font-size: 28px;
   text-align:center;
+  border-radius: 10px;
   z-index: 1;
   overflow-x: hidden;
   width: 0;
@@ -239,6 +245,15 @@ patching up
     position: fixed;
     right: 25px;
     top: 15px;
+    cursor: pointer;
+}
+
+#settingsButton:hover {
+  opacity: 0.75;
+}
+
+#settingsButton:active {
+  opacity: 0.5;
 }
 
 
@@ -345,4 +360,18 @@ label {
   text-align: center;
   color: white;
   margin-bottom: 15px;
+}
+
+.body-div {
+  display: inline-flex;
+  flex-flow: column;
+}
+
+.body-p {
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  margin-top: 10px;
+  padding: 10px;
+  letter-spacing: 2px;
 }

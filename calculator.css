@@ -1,3 +1,4 @@
+* {font-family: 'Roboto', sans-serif;}
 
 body{
     background-color: #182a36;
@@ -9,10 +10,12 @@ body{
  .Nav {
     display: flex;
     flex-direction: row;
-    justify-content:center;
+    justify-content: space-evenly;
     width: 100%;
-    margin-top: 30px;
     margin-bottom: 50px;
+    height: 75px;
+    background-color: #237c7c;
+    position: relative;
 }
 
 a {
@@ -21,38 +24,41 @@ a {
 
 nav {
     padding-top: 10px;
-    margin-top: 15px;
+    margin-top: 0px;
 }
 .Button {
     width: 200px;
     height: 50px;
     border-radius: 5px;
-    background-color: #0081D5;
     text-align: center;
     font-size: 1.2rem;
     color: white;
     transition: opacity 0.25s;
     margin-right: 25px;
+    margin-top: 10px;
 }
 
+
 .Button:hover {
-  opacity: 0.85;
+  background-color: #3e90cb;
+  transition: background-color 0.25s;
 }
 
 .Button:active {
   opacity: 0.7;
 }
 
-#Button2 {
-    background-color: #03BD5B;
+.Button.hover-slide-up::before {
+  bottom: 0; left: 0; right: 0;
+  height: 0%; width: 100%;
+}
+.Button.hover-slide-up:hover::before {
+  height: 100%;
 }
 
-#Button3 {
-    background-color: #D2335B;
-}
 
 form {
-    color: rgb(186, 186,186);
+    color: rgb(246, 246, 246);
     align-items: center;
     text-align: center;
     background-color: #425663;
