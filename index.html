@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <title>!False Story</title>
-    <link rel="stylesheet" href="stylesheet.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <script type="text/javascript" src="sidebar.js"></script>
-</head>
+  </head>
 
-
-<body>
+  <body>
     <div class="Nav">
         <a href = "#">
         <div class="Button hover-slide-up" id = "Button1">
@@ -121,30 +122,40 @@
             </p>
 
         </div>
+
+        <p class="account">
+          <a href="https://www.google.com"> create an account</a>
+        </p>
+      </div>
     </div>
 
-    <div class = "bodies-div">
-        <section class = "Bodies">
+    <div class="bodies-div">
+      <section class="Bodies">
+        <object
+          type="image/svg+xml"
+          data="assests/body-front.svg"
+          id="FrontBody"
+        ></object>
 
-            <object type="image/svg+xml" data="assests/body-front.svg" id ="FrontBody">
-
-            </object>
-
-
-            <figure>
-                <object type="image/svg+xml" data="assests/body-back.svg" id = "BackBody">
-
-                </object>
-            </figure>
-
-        </section>
+        <figure>
+          <object
+            type="image/svg+xml"
+            data="assests/body-back.svg"
+            id="BackBody"
+          ></object>
+        </figure>
+      </section>
     </div>
 
-    <div class = "logo">
-        <img src="assests/Logo.png"  width="50%" alt ="arm logo">
-    </div>
+    <a
+      href="javascript:void(0)"
+      id="settingsButton"
+      onclick="activateSettings()"
+    >
+      <img src="assests/gear.svg" alt="Gear Icon" />
+    </a>
+  </body>
 
-</body>
 
-<script type="text/javascript" src="muscles.js"></script>
+  <script type="text/javascript" src="muscles.js"></script>
 </html>
