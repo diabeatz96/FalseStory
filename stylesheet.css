@@ -22,10 +22,12 @@ html {
 .Nav {
     display: flex;
     flex-direction: row;
-    justify-content:center;
+    justify-content: space-evenly;
     width: 100%;
-    margin-top: 30px;
     margin-bottom: 50px;
+    height: 75px;
+    background-color: #237c7c;
+    position: relative;
 }
 
 a {
@@ -34,34 +36,53 @@ a {
 
 nav {
     padding-top: 10px;
-    margin-top: 15px;
 }
 .Button {
+    margin-top: 15px;
     width: 200px;
     height: 50px;
     border-radius: 5px;
-    background-color: #0081D5;
     text-align: center;
     font-size: 1.2rem;
     color: white;
     transition: opacity 0.25s;
-    margin-right: 25px;
 }
+
 
 .Button:hover {
   opacity: 0.85;
+    background-color: #0081D5;
+}
+
+.Button.hover-slide-up::before {
+    bottom: 0; left: 0; right: 0;
+    height: 0%; width: 100%;
+}
+.Button.hover-slide-up:hover::before {
+    height: 100%;
 }
 
 .Button:active {
   opacity: 0.7;
 }
 
-#Button2 {
-    background-color: #03BD5B;
+#Button1:hover {
+    background-color: #3e90cb;
+    transition: background-color 1s;
+}
+#Button2:hover {
+    background-color: #3e90cb;
+    transition: background-color 1s;
 }
 
-#Button3 {
-    background-color: #D2335B;
+#Button3:hover {
+    background-color: #3e90cb;
+    transition: background-color 1s;
+}
+
+#Button4:hover {
+    background-color: #3e90cb;
+    transition: background-color 1s;
 }
 
 .Bodies {
@@ -79,13 +100,19 @@ nav {
     width: 20rem;
 }
 
+.logo {
+    position: fixed;
+}
 
+.logo img {
+    opacity: 40%;
+}
 #settingsBar {
   position: absolute;
-  color: rgb(186, 186, 186);
-  height: 58%;
+  color: rgb(255, 255, 255);
+  height: 65%;
   background-color: #425663;
-  font-size: 24px;
+  font-size: 28px;
   text-align:center;
   z-index: 1;
   overflow-x: hidden;
@@ -107,16 +134,17 @@ nav {
 }
 
 .account {
-  font-size: 12px;
+  font-size: 11px;
   text-align:center;
   margin-top: 25px;
 }
 
 form  {
     font-size: 16px;
+    padding-top: 2px;
 }
 
-a:link {
+a:link, a:visited {
     color: #0081D5;
     background-color: transparent;
     text-decoration: none;
@@ -138,11 +166,11 @@ input[type=submit] {
     border-radius: 34px;
 }
 
-#bodyType {
+/* #bodyType {
     font-size: 16px;
     padding: 25px 0 0 16px;
     text-align: left;
-}
+} */
 
 /* Toggle Switch style: */
 
@@ -152,7 +180,6 @@ input[type=submit] {
     width: 40px;
     height: 20px;
 }
-
 
 .slider {
     position: absolute;
@@ -210,8 +237,8 @@ patching up
 
 #settingsButton {
     position: fixed;
-    bottom: 90%;
-    right: 15px;
+    right: 25px;
+    top: 15px;
 }
 
 
@@ -220,6 +247,102 @@ patching up
  */
 
 #infobox {
-    box-shadow: rgba(141, 2, 255, 0.3) 0 0 0 3px;
+    box-shadow: rgb(27, 45, 61) 0px 2px 4px 0px inset;
     border-radius: 20px;
+    background-image: linear-gradient(-20deg, #00cdac 0%, #8ddad5 100%);
+}
+
+.height-width-input {
+  width: 55%;
+  float: left;
+  height:80px;
+}
+
+.height-width-buttons {
+  width: 30%;
+  float: left;
+  height: 80px;
+  margin: 3px;
+}
+
+.sign-up-button {
+  width: 200px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #1b2e3b;
+  text-align: center;
+  border-style:hidden;
+  font-size: 1.2rem;
+  color: white;
+  transition: opacity 0.25s;
+  cursor: pointer;
+}
+
+.sign-up-button:hover {
+  opacity: 0.85;
+}
+
+.sign-up-button:active {
+  opacity: 0.7;
+}
+
+.account {
+  font-size: 16px;
+  margin-top: 6px;
+}
+
+label {
+  color: white;
+}
+
+.continue {
+  width: 140px;
+  height: 35px;
+  border-radius: 5px;
+  background-color: #1b2e3b;
+  text-align: center;
+  border-style:hidden;
+  font-size: 1.2rem;
+  color: white;
+  transition: opacity 0.25s;
+  margin-bottom: 15px;
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+.continue:hover {
+  opacity: 0.85;
+}
+
+.continue:active {
+  opacity: 0.7;
+}
+
+.gender-dropdown {
+  padding: 8px 12px;
+  color: black;
+  background-color: white;
+  border: 1px solid #1b2e3b;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  margin-top: 15px;
+}
+
+.gender-dropdown:focus, 
+.gender-dropdown:hover {
+  outline: none;
+  border: 1px solid #0c151b;
+}
+
+.gender-dropdown option {
+  background: white;
+}
+
+.height-and-weight {
+  margin: 0px;
+  font-size: 28px;
+  text-align: center;
+  color: white;
+  margin-bottom: 15px;
 }
