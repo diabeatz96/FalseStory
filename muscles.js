@@ -68,9 +68,12 @@ frontbody.addEventListener("load", () => {
 
         const listHeader = document.createElement("ul");
         const listItem1 = document.createElement("li");
-        listItem1.innerHTML = "<a href = \"https://www.google.com\"> Click Here! </a>  "
+        const listItem2 = document.createElement("li");
+        listItem1.innerHTML = "<a href = \"https://www.google.com\"> Click Here! </a>  ";
+        listItem2.innerHTML = "<a href = \"https://www.google.com\"> Test </a>  ";
         newBox.append(listHeader);
         listHeader.append(listItem1);
+        listHeader.append(listItem2);
         document.querySelector(".Bodies").append(newBox);
     })
 
