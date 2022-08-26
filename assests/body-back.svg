@@ -9,8 +9,35 @@
         fill: #515761;
       }
 
+      #backdeltoids:hover {
+      fill: #ffa500;
+      }
+
+      #triceps:hover {
+      fill: #ffff00;
+      }
+
+      #lowerleg:hover {
+      fill: #008000;
+      }
+
+      #hamstrings:hover {
+      fill: #0000ff;
+      }
+
+      #gluteus:hover {
+      fill: #4b0082;
+      }
+
+      #lowerback:hover {
+      fill: #ee82ee;
+      }
+
+      #trapezoidback:hover {
+      fill: #ff0000;
+      }
+
       .muscle:hover {
-      fill: red;
       filter: url(#red-glow);
       }
 
@@ -64,11 +91,7 @@
 
       <!-- merge all the blurs except for the first one -->
       <feMerge result="blur-merged">
-        <feMergeNode in="blur10"/>
-        <feMergeNode in="blur20"/>
         <feMergeNode in="blur30"/>
-        <feMergeNode in="blur50"/>
-        <feMergeNode in="blur80"/>
       </feMerge>
       <!-- recolour the merged blurs red-->
 
