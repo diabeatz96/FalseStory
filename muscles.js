@@ -69,11 +69,17 @@ frontbody.addEventListener("load", () => {
         const listHeader = document.createElement("ul");
         const listItem1 = document.createElement("li");
         const listItem2 = document.createElement("li");
-        listItem1.innerHTML = "<a href = \"https://www.google.com\"> Click Here! </a>  ";
-        listItem2.innerHTML = "<a href = \"https://www.google.com\"> Test </a>  ";
+        const listItem3 = document.createElement("li");
+        const listItem4 = document.createElement("li");
+        listItem1.innerHTML = "<a href = \"https://www.headspace.com/meditation\"> Meditation </a>  ";
+        listItem2.innerHTML = "<a href = \"https://sleepopolis.com/calculators/sleep/\"> Get enough sleep </a>  ";
+        listItem3.innerHTML = "<a href = \"https://penzu.com//\"> Journaling </a>  ";
+        listItem4.innerHTML = "<a> Exercise! </a>  ";
         newBox.append(listHeader);
         listHeader.append(listItem1);
         listHeader.append(listItem2);
+        listHeader.append(listItem3);
+        listHeader.append(listItem4);
         document.querySelector(".Bodies").append(newBox);
     })
 
@@ -103,6 +109,21 @@ frontbody.addEventListener("load", () => {
         text.style.textAlign = "Center";
         newBox.append(text);
 
+        const listHeader = document.createElement("ul");
+        const listItem1 = document.createElement("li");
+        const listItem2 = document.createElement("li");
+        const listItem3 = document.createElement("li");
+        const listItem4 = document.createElement("li");
+        listItem1.innerHTML = "<a href = \"https://www.headspace.com/meditation\"> Meditation </a>  ";
+        listItem2.innerHTML = "<a href = \"https://sleepopolis.com/calculators/sleep/\"> Get enough sleep </a>  ";
+        listItem3.innerHTML = "<a href = \"https://penzu.com//\"> Journaling </a>  ";
+        listItem4.innerHTML = "<a> Exercise! </a>  ";
+        newBox.append(listHeader);
+        listHeader.append(listItem1);
+        listHeader.append(listItem2);
+        listHeader.append(listItem3);
+        listHeader.append(listItem4);
+        document.querySelector(".Bodies").append(newBox);
     })
 
     doc.querySelector("#abdomen").addEventListener("click", () => {
@@ -127,9 +148,25 @@ frontbody.addEventListener("load", () => {
         boxSettings(newBox, e);
         document.querySelector(".Bodies").append(newBox);
         const text = document.createElement("h2");
-        text.innerText = "Trapezoid";
+        text.innerText = "Trapezius";
         text.style.textAlign = "Center";
         newBox.append(text);
+
+        const listHeader = document.createElement("ul");
+        const listItem1 = document.createElement("li");
+        const listItem2 = document.createElement("li");
+        const listItem3 = document.createElement("li");
+        const listItem4 = document.createElement("li");
+        listItem1.innerHTML = "<a href = \"https://www.youtube.com/watch?v=rt17lmnaLSM\"> Farmer's Carry </a>  ";
+        listItem2.innerHTML = "<a href = \"https://www.youtube.com/watch?v=V8dZ3pyiCBo\"> Face Pulls </a>  ";
+        listItem3.innerHTML = "<a href = \"https://www.youtube.com/watch?v=cJRVVxmytaM/\"> Dumbbell Shrug </a>  ";
+        listItem4.innerHTML = "<a href = \"https://www.youtube.com/watch?v=9efgcAjQe7E\"> Babrell Row </a>  ";
+        newBox.append(listHeader);
+        listHeader.append(listItem1);
+        listHeader.append(listItem2);
+        listHeader.append(listItem3);
+        listHeader.append(listItem4);
+        document.querySelector(".Bodies").append(newBox);
     })
 
     doc.querySelector("#trapezoid").addEventListener("mouseleave", () => {
@@ -162,6 +199,22 @@ frontbody.addEventListener("load", () => {
         text.innerText = "Pectorals";
         text.style.textAlign = "Center";
         newBox.append(text);
+
+        const listHeader = document.createElement("ul");
+        const listItem1 = document.createElement("li");
+        const listItem2 = document.createElement("li");
+        const listItem3 = document.createElement("li");
+        const listItem4 = document.createElement("li");
+        listItem1.innerHTML = "<a href = \"https://www.youtube.com/watch?v=gRVjAtPip0Y\"> Bench Press </a>  ";
+        listItem2.innerHTML = "<a href = \"https://www.youtube.com/watch?v=DbFgADa2PL8\"> Incline Bench Press </a>  ";
+        listItem3.innerHTML = "<a href = \"https://www.youtube.com/watch?v=IODxDxX7oi4\"> Push-ups </a>  ";
+        listItem4.innerHTML = "<a href = \"https://www.youtube.com/watch?v=dX_nSOOJIsE\"> Chest Dips </a>  ";
+        newBox.append(listHeader);
+        listHeader.append(listItem1);
+        listHeader.append(listItem2);
+        listHeader.append(listItem3);
+        listHeader.append(listItem4);
+        document.querySelector(".Bodies").append(newBox);
     })
 
     doc.querySelector("#pectorals").addEventListener("click", () => {
