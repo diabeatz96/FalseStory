@@ -6,34 +6,28 @@ submission.addEventListener("click", () => {
   const exercise_ = document.querySelector("#lift");
   const weight_ = document.querySelector("#dweight");
   const repetitions_ = document.querySelector("#repetitions");
-  const percentage_ = document.querySelector("#percentage");
-  
+
   let weight = parseFloat(weight_.value);
   let repetitions = parseFloat(repetitions_.value);
-  let percentage = parseFloat(percentage_.value);
   let exercise = exercise_.value;
 
 const screen = document.querySelector("#screen")
-if(!exercise || !weight || !repetitions || !percentage) {
+if(!exercise || !weight || !repetitions) {
     screen.textContent = "Fill All Fields"
-} else if((exercise !== "Bench Press") && (exercise !== "Biceps Arm Curl") && (exercise !== "Crunch") && (exercise !== "Deadlift") && (exercise !== "Lat Pulldown") && (exercise !== "Leg Press") 
+} else if((exercise !== "Bench Press") && (exercise !== "Biceps Arm Curl") && (exercise !== "Crunch") && (exercise !== "Deadlift") && (exercise !== "Lat Pulldown") && (exercise !== "Leg Press")
 && (exercise !== "Overhead Press" ) && (exercise !== "Squat") &&(exercise!=="Seated Cable Row") &&(exercise!== "Triceps Pushdown")){
   screen.textContent = "Select valid exercise";
 }else if(weight<0){
   screen.textContent = "Invalid weight given";
-}else if(repetitions<0){
-  screen.textContent="Invalid Reps given";
-}else if(percentage<0 || percentage>100){
-  screen.textContent="Invalid percentage given";
-}
-else{
+}else if(repetitions<0) {
+  screen.textContent = "Invalid Reps given";
+} else{
     /*
   Write your code here on logic for weight repetitions and specify exercise.
     */
 
   let oneRM = weight * (1 + (repetitions/30));
-  let percentageRM = (((percentage)/100) * oneRM).toFixed(2);
-  screen.textContent = percentageRM.toString();
+  screen.textContent = oneRM.toString();
 
 }
 
