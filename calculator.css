@@ -8,44 +8,41 @@ body{
  */
 
  .Nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 100%;
-    margin-bottom: 50px;
-    height: 75px;
-    background-color: #237c7c;
-    position: relative;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-bottom: 50px;
+  height: 75px;
+  background-color: #237c7c;
+  position: relative;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 nav {
-    padding-top: 10px;
-    margin-top: 0px;
+  padding-top: 10px;
 }
 .Button {
-    width: 200px;
-    height: 50px;
-    border-radius: 5px;
-    text-align: center;
-    font-size: 1.2rem;
-    color: white;
-    transition: opacity 0.25s;
-    margin-right: 25px;
-    margin-top: 10px;
+  margin-top: 15px;
+  width: 200px;
+  height: 50px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1.2rem;
+  color: white;
+  transition: opacity 0.25s;
+    padding-top: 10px;
+    margin-top: 0px;
 }
 
 
 .Button:hover {
-  background-color: #3e90cb;
-  transition: background-color 0.25s;
-}
-
-.Button:active {
-  opacity: 0.7;
+opacity: 0.85;
+  background-color: #0081D5;
 }
 
 .Button.hover-slide-up::before {
@@ -54,40 +51,280 @@ nav {
 }
 .Button.hover-slide-up:hover::before {
   height: 100%;
+  background-color: #3e90cb;
+  transition: background-color 0.25s;
 }
 
+.Button:active {
+opacity: 0.7;
+}
 
-form {
-    color: rgb(246, 246, 246);
+#Button1:hover {
+  background-color: #3e90cb;
+  transition: background-color 1s;
+}
+#Button2:hover {
+  background-color: #3e90cb;
+  transition: background-color 1s;
+}
+
+#Button3:hover {
+  background-color: #3e90cb;
+  transition: background-color 1s;
+}
+
+#Button4:hover {
+  background-color: #3e90cb;
+  transition: background-color 1s;
+}
+.logo {
+  position: fixed;
+}
+
+.logo img {
+  opacity: 40%;
+}
+#settingsBar {
+position: absolute;
+color: rgb(255, 255, 255);
+height: 65%;
+background-color: #425663;
+font-size: 28px;
+text-align:center;
+z-index: 1;
+overflow-x: hidden;
+width: 0;
+margin-left: 10px;
+padding-top: 35px;
+transition: 1s;
+}
+
+#settings .closeSettings {
+  font-size: 36px;
+  padding-right: 50px;
+}
+
+#settings {
+display: flex;
+justify-content: left;
+margin-right: 330px;
+}
+
+.account {
+font-size: 11px;
+text-align:center;
+margin-top: 25px;
+}
+
+form  {
+  font-size: 16px;
+  padding-top: 2px;
+}
+
+a:link, a:visited {
+  color: #0081D5;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #03BD5B;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+input[type=submit] {
+  padding:5px 15px;
+  background:rgb(208, 210, 213);
+  border:0 none;
+  font-size: 12px;
+  position: relative;
+  margin: 0 0 25px 185px;
+  border-radius: 34px;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 11px;
+  width: 11px;
+  left: 1px;
+  bottom: 5px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+#settingsButton {
+  position: fixed;
+  right: 25px;
+  top: 15px;
+}
+
+.height-width-input {
+width: 55%;
+float: left;
+height:80px;
+}
+
+.height-width-buttons {
+width: 30%;
+float: left;
+height: 80px;
+margin: 3px;
+}
+
+.sign-up-button {
+width: 200px;
+height: 40px;
+border-radius: 5px;
+background-color: #1b2e3b;
+text-align: center;
+border-style:hidden;
+font-size: 1.2rem;
+color: white;
+transition: opacity 0.25s;
+cursor: pointer;
+}
+
+.sign-up-button:hover {
+opacity: 0.85;
+}
+
+.sign-up-button:active {
+opacity: 0.7;
+}
+
+.account {
+font-size: 16px;
+margin-top: 6px;
+}
+
+label {
+color: white;
+}
+
+.continue {
+width: 140px;
+height: 35px;
+border-radius: 5px;
+background-color: #1b2e3b;
+text-align: center;
+border-style:hidden;
+font-size: 1.2rem;
+color: white;
+transition: opacity 0.25s;
+margin-bottom: 15px;
+margin-top: 8px;
+cursor: pointer;
+}
+
+.continue:hover {
+opacity: 0.85;
+}
+
+.continue:active {
+opacity: 0.7;
+}
+
+.gender-dropdown {
+padding: 8px 12px;
+color: black;
+background-color: white;
+border: 1px solid #1b2e3b;
+cursor: pointer;
+border-radius: 5px;
+margin-bottom: 20px;
+margin-top: 15px;
+}
+
+.gender-dropdown:focus, 
+.gender-dropdown:hover {
+outline: none;
+border: 1px solid #0c151b;
+}
+
+.gender-dropdown option {
+background: white;
+}
+
+.height-and-weight {
+margin: 0px;
+font-size: 28px;
+text-align: center;
+color: white;
+margin-bottom: 15px;
+}
+
+.calculator {
+    color: #fff;
     align-items: center;
     text-align: center;
     background-color: #425663;
     margin: 50px;
-	width: 330px;
-	height: 500px;
-	margin: 0 auto;		
-	border-radius: 20px;
-	padding: 10px;
+	  width: 330px;
+	  height: 500px;
+	  margin: 0 auto;		
+	  border-radius: 20px;
+	  padding: 10px;
     margin-bottom: 50px;
+    position: relative;
+    right: 150px;
+    box-shadow: 0 0 40px #000;
   }
-  header{
+  .calculator header{
     text-align: center;
     background-color: #d1e0e0;
     line-height: 100px;
     color: #63666A;
-	width: 330px;
-	height: 100px;
-	border-top-left-radius: 10px;
+	  width: 330px;
+	  height: 100px;
+	  border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-	margin: 0;	
-	font-size: xx-large;
+	  margin: 0;	
+	  font-size: xx-large;
   }
-  form input{
+  .calculator input{
     border-radius: 6px;
     background-color: #d1e0e0;
     color: #63666A;
   }
-  label,input{
+  .calculator label, .calculator input{
     display: flex;
     flex-direction: column;
     width: 322px;
@@ -95,7 +332,7 @@ form {
     text-align: center;
     margin: 0;
   }
-  label{
+  .calculator label{
     margin-top: 15px;
   }
   .submission input{
@@ -108,4 +345,9 @@ form {
     font-size: 22px;
     cursor: pointer;
   }
-  
+  .video{
+    float: right;
+    position: relative;
+    bottom: 567px;
+    right: 10px;
+  }
