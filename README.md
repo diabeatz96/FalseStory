@@ -3,8 +3,9 @@
 
 MyMuscles is a web app for health-centric
 gym-goers to find out the benefits of working out
-each muscle. In addition, we provide an rm calculator
-to give tools for those who want know the optimal amount of reps for their workout.
+each muscle and how. In addition, we provide an 1 Rep Max calculator
+to give tools for those who want to predict what their maximum strength 
+is for a single rep!
 
 
 
@@ -48,13 +49,13 @@ Live deployment of website is hosted here:
 
 ### Inspiration
 
-Mymuscles was inspired by one of our groupmates Jon, who noticed the lack of education when benchpressing or doing any type of hardworkout at the gym. People who do this type of training work out particular muscles under very heavy conditions, and MyMuscles provides a site with the necessary tools so we can educate and showcase the body in detail.
+MyMuscles was inspired by one of our groupmates, Jon, who noticed the lack of education when benchpressing or doing any type of hardworkout at the gym. People who do this type of training work out particular muscles under heavy load, and MyMuscles provides a site with the necessary tools so we can educate and showcase the body and its capabilities in detail.
 
 ### What it does
 
-Mymuscles is in total a 3 part experience. The first part of the experience is on the homepage, where users can hover over the human body and interactivley see muscle groups glow, and learn about them in finer detail, when clicking on a muscle it leads to a youtube embed about that muscle type.
+MyMuscles is in total a 3 part experience. The first part of the experience is on the homepage, where users can hover over the human body and interactivley see muscle groups glow, and learn about how to work them in finer detail, when clicking on a muscle it leads to a YouTube embed about that muscle type.
 
-The second part of our website is a calculator that works at showing you your max rep count on various activities, along with showcasing some videos on those work outs
+The second part of our website is a calculator that works at predicting your one rep max on various activities, along with showcasing some videos on those work outs
 
 The third part of our website showcases fitness tracker, which tracks FitBit data (total daily distance, total steps, activity minutes, and calories) so users can link their device and see if they are increasing their stats overtime, if they're staying the same, or worse, if their stats are decreasing. 
 
@@ -100,5 +101,4 @@ We learned several things throughout creating this websites.
 ### What's next for MyMuscles
 
 MyMuscles definitely has a lot of features we want to add onto after this hacakathon. 
-We want to add more mobile functionality. We also set-up a mock settings page as a placeholder for what we envision with what we could do to maximize customizability for the website. Mainly we wanted to be able to change out the body graphic based on the gender selection. We thought it would be important for a future update to have a women's/nonbinary body also be represented, since muscles structure
-is slightly different and we want users to feel connected with the avatar. 
+We want to add more mobile functionality. We also set-up a mock settings page as a placeholder for what we envision with what we could do to maximize customizability for the website. Mainly we wanted to be able to change out the body graphic based on the gender selection. We thought it would be important for a future update to have more inclusive body options, relating to gender and size be represented, since everyone's body is slightly different, we want users to feel connected with the avatar. 

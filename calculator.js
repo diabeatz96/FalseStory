@@ -12,7 +12,7 @@ let percentage = parseFloat(percentage_.value);
 
 submission.addEventListener("click", () => {
     const screen = document.querySelector("#screen")
-    if(!exercise.value || !weight || !repetitions || !percentage) {
+    if(!exercise || !weight || !repetitions || !percentage) {
         screen.textContent = "Fill All Fields"
     } else {
         /*

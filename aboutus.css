@@ -1,3 +1,5 @@
+* {font-family: 'Roboto', sans-serif;}
+
 body{
     background-color: #182a36;
 }
@@ -8,10 +10,12 @@ body{
  .Nav {
     display: flex;
     flex-direction: row;
-    justify-content:center;
+    justify-content: space-evenly;
     width: 100%;
-    margin-top: 30px;
     margin-bottom: 50px;
+    height: 75px;
+    background-color: #237c7c;
+    position: relative;
 }
 
 a {
@@ -26,7 +30,6 @@ nav {
     width: 200px;
     height: 50px;
     border-radius: 5px;
-    background-color: #0081D5;
     text-align: center;
     font-size: 1.2rem;
     color: white;
@@ -35,20 +38,14 @@ nav {
 }
 
 .Button:hover {
-  opacity: 0.85;
+    background-color: #3e90cb;
+    transition: background-color 0.25s;
 }
 
 .Button:active {
   opacity: 0.7;
 }
 
-#Button2 {
-    background-color: #03BD5B;
-}
-
-#Button3 {
-    background-color: #D2335B;
-}
 section{
     background-color: #425663;
     color: rgb(186, 186,186);
