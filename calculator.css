@@ -1,3 +1,4 @@
+* {font-family: 'Roboto', sans-serif;}
 
 body{
     background-color: #182a36;
@@ -7,6 +8,7 @@ body{
  */
 
  .Nav {
+
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -33,6 +35,8 @@ nav {
   font-size: 1.2rem;
   color: white;
   transition: opacity 0.25s;
+    padding-top: 10px;
+    margin-top: 0px;
 }
 
 
@@ -47,6 +51,8 @@ opacity: 0.85;
 }
 .Button.hover-slide-up:hover::before {
   height: 100%;
+  background-color: #3e90cb;
+  transition: background-color 0.25s;
 }
 
 .Button:active {
