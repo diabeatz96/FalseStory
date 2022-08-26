@@ -1,0 +1,382 @@
+body{
+    background-color: #182a36;
+}
+* {font-family: 'Roboto', sans-serif;}
+/*
+      Class selectors for all content within the a class
+ */
+
+ .Nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-bottom: 50px;
+    height: 75px;
+    background-color: #237c7c;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    padding-top: 10px;
+}
+.Button {
+    margin-top: 15px;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.2rem;
+    color: white;
+    transition: opacity 0.25s;
+}
+
+
+.Button:hover {
+  opacity: 0.85;
+    background-color: #0081D5;
+}
+
+.Button.hover-slide-up::before {
+    bottom: 0; left: 0; right: 0;
+    height: 0%; width: 100%;
+}
+.Button.hover-slide-up:hover::before {
+    height: 100%;
+}
+
+.Button:active {
+  opacity: 0.7;
+}
+
+#Button1:hover {
+    background-color: #3e90cb;
+    transition: background-color 1s;
+}
+#Button2:hover {
+    background-color: #3e90cb;
+    transition: background-color 1s;
+}
+
+#Button3:hover {
+    background-color: #3e90cb;
+    transition: background-color 1s;
+}
+
+#Button4:hover {
+    background-color: #3e90cb;
+    transition: background-color 1s;
+}
+
+.logo {
+    position: fixed;
+}
+
+.logo img {
+    opacity: 40%;
+}
+#settingsBar {
+  position: absolute;
+  color: rgb(255, 255, 255);
+  height: 65%;
+  background-color: #425663;
+  font-size: 28px;
+  text-align:center;
+  z-index: 1;
+  overflow-x: hidden;
+  width: 0;
+  margin-left: 10px;
+  padding-top: 35px;
+  transition: 1s;
+}
+
+#settings .closeSettings {
+    font-size: 36px;
+    padding-right: 50px;
+}
+
+#settings {
+  display: flex;
+  justify-content: left;
+  margin-right: 330px;
+}
+
+.account {
+  font-size: 11px;
+  text-align:center;
+  margin-top: 25px;
+}
+
+form  {
+    font-size: 16px;
+    padding-top: 2px;
+}
+
+a:link, a:visited {
+    color: #0081D5;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+a:hover {
+    color: #03BD5B;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+input[type=submit] {
+    padding:5px 15px;
+    background:rgb(208, 210, 213);
+    border:0 none;
+    font-size: 12px;
+    position: relative;
+    margin: 0 0 25px 185px;
+    border-radius: 34px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 11px;
+    width: 11px;
+    left: 1px;
+    bottom: 5px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/*
+flexbox issue, resolved temporarily with margin right, needs
+patching up
+
+@Adam, Adjusted the Flexbox to be on a z-index, and changed to a fixed layout
+*/
+
+.bodies-div {
+  display: flex;
+  justify-content:center;
+}
+
+#settingsButton {
+    position: fixed;
+    right: 25px;
+    top: 15px;
+}
+
+
+/*
+    Info Box from JavaScript
+ */
+
+#infobox {
+    box-shadow: rgb(27, 45, 61) 0px 2px 4px 0px inset;
+    border-radius: 20px;
+    background-image: linear-gradient(-20deg, #00cdac 0%, #8ddad5 100%);
+}
+
+.height-width-input {
+  width: 55%;
+  float: left;
+  height:80px;
+}
+
+.height-width-buttons {
+  width: 30%;
+  float: left;
+  height: 80px;
+  margin: 3px;
+}
+
+.sign-up-button {
+  width: 200px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #1b2e3b;
+  text-align: center;
+  border-style:hidden;
+  font-size: 1.2rem;
+  color: white;
+  transition: opacity 0.25s;
+  cursor: pointer;
+}
+
+.sign-up-button:hover {
+  opacity: 0.85;
+}
+
+.sign-up-button:active {
+  opacity: 0.7;
+}
+
+.account {
+  font-size: 16px;
+  margin-top: 6px;
+}
+
+label {
+  color: white;
+}
+
+.continue {
+  width: 140px;
+  height: 35px;
+  border-radius: 5px;
+  background-color: #1b2e3b;
+  text-align: center;
+  border-style:hidden;
+  font-size: 1.2rem;
+  color: white;
+  transition: opacity 0.25s;
+  margin-bottom: 15px;
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+.continue:hover {
+  opacity: 0.85;
+}
+
+.continue:active {
+  opacity: 0.7;
+}
+
+.gender-dropdown {
+  padding: 8px 12px;
+  color: black;
+  background-color: white;
+  border: 1px solid #1b2e3b;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  margin-top: 15px;
+}
+
+.gender-dropdown:focus, 
+.gender-dropdown:hover {
+  outline: none;
+  border: 1px solid #0c151b;
+}
+
+.gender-dropdown option {
+  background: white;
+}
+
+.height-and-weight {
+  margin: 0px;
+  font-size: 28px;
+  text-align: center;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.bodies-div {
+  display: flex;
+  justify-content:center;
+}
+
+#settingsButton {
+    position: fixed;
+    right: 25px;
+    top: 15px;
+}
+
+h1{
+    font-size: xxx-large;
+    padding: 1px;
+}
+section{
+    color: rgb(186, 186,186);
+    align-items: center;
+    text-align: center;
+}
+.description{
+    text-align: left;
+    overflow: hidden;
+    padding-left: 20px;
+    line-height: 35px;
+    font-size: 18px;
+    margin-right: 3px;
+}
+section img{
+    float: left;
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+    margin-left: 20px;
+    margin-top: 0;
+    box-shadow: -10px 30px 30px #000;
+}
+#adam{
+    margin: 20px;
+    border:2px solid;
+    border-color: #fff;
+    height: 300px;
+    box-shadow: 0 0 40px #000;
+    background-color: #425663;
+}
+#aleks{
+    margin: 20px;
+    border:2px solid;
+    border-color: #fff;
+    height: 300px;
+    box-shadow: 0 0 40px #000;
+    background-color: #425663;
+}
+#jon{
+    margin: 20px;
+    border:2px solid;
+    border-color: #fff;
+    height: 300px;
+    box-shadow: 0 0 40px #000;
+    background-color: #425663;
+}
+#affat{
+    margin: 20px;
+    border:2px solid;
+    border-color: #fff;
+    height: 300px;
+    box-shadow: 0 0 40px #000;
+    background-color: #425663;
+}

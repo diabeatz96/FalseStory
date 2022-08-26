@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <title>!False Story</title>
-    <link rel="stylesheet" href="stylesheet.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <script type="text/javascript" src="sidebar.js"></script>
-</head>
+  </head>
 
-
-<body>
+  <body>
     <div class="Nav">
+        <div class = "logo">
+            <img class = "logo-img" src="assests/Logo.png"  width="50%" alt ="arm logo">
+        </div>
         <a href = "#">
         <div class="Button hover-slide-up" id = "Button1">
             <nav> Muscle Groups </nav>
@@ -29,9 +33,9 @@
             <nav> About Us </nav>
         </div >
         </a>
-        <a href = "https://www.google.com/" target="_blank">
+        <a href = "/FitnessResearchNotebook.html" target="_blank">
             <div class = "Button hover-slide-up" id = "Button4">
-                <nav> Fitness Data </nav>
+                <nav> Fitness Tracker </nav>
             </div >
         </a>
 
@@ -44,7 +48,8 @@
 
     <div id = "settings">
         <div id = "settingsBar"> Login Settings
-            <p class = "account" > Have an account? Sign in.</p>
+            <p class = "account" > Have an account? Sign in</p>
+            
 
             <form>
                 <p>
@@ -59,6 +64,7 @@
                 <p>
                     <button class = "continue">Continue</button> 
                 </p>
+                <p class = "account"><a href="#">create an accout</a></p>
                 <p class = "height-and-weight">Height & Weight</p>
             </form>
 
@@ -117,31 +123,39 @@
             <p class = "account" >
                 <button class = "sign-up-button">Save Settings</button>
             </p>
+
         </div>
     </div>
 
     <div class = "bodies-div">
         <section class = "Bodies">
-
-            <object type="image/svg+xml" data="assests/body-front.svg" id ="FrontBody">
-
-            </object>
-
-
-            <figure>
-                <object type="image/svg+xml" data="assests/body-back.svg" id = "BackBody">
+            <div class = "body-div">
+                <object type="image/svg+xml" data="assests/body-front.svg" id ="FrontBody">
 
                 </object>
-            </figure>
+                <p class = "body-p">Front</p>
+            </div>
 
+            <div class = "body-div">
+                <figure>
+                    <object type="image/svg+xml" data="assests/body-back.svg" id = "BackBody">
+
+                    </object>
+                    <p class = "body-p">Back</p>
+                </figure>
+            </div>
         </section>
     </div>
 
-    <div class = "logo">
-        <img src="assests/Logo.png"  width="50%" alt ="arm logo">
-    </div>
+    <a
+      href="javascript:void(0)"
+      id="settingsButton"
+      onclick="activateSettings()"
+    >
+      <img src="assests/gear.svg" alt="Gear Icon" />
+    </a>
+  </body>
 
-</body>
 
-<script type="text/javascript" src="muscles.js"></script>
+  <script type="text/javascript" src="muscles.js"></script>
 </html>
