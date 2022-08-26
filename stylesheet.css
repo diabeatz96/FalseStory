@@ -268,17 +268,18 @@ patching up
 }
 
 #infobox a {
-    color: black;
+    color: white;
     text-decoration: none;
     text-transform: uppercase;
-    box-shadow: 0 5px 0 dimgray;
+    box-shadow: 0 3px 0 antiquewhite;
+    font-size: 13px;
 }
 
 
 #infobox a:hover {
     top: 5px;
     color: #00A250;
-    text-decoration: underline;
+    box-shadow: 0 3px 0 darkgreen;
 }
 
 .height-width-input {
