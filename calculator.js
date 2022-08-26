@@ -3,7 +3,7 @@ const lift = document.querySelector("#lift");
 
 submission.addEventListener("click", () => {
 
-  const exercise = document.querySelector("#lift");
+  const exercise_ = document.querySelector("#lift");
   const weight_ = document.querySelector("#dweight");
   const repetitions_ = document.querySelector("#repetitions");
   const percentage_ = document.querySelector("#percentage");
@@ -11,11 +11,22 @@ submission.addEventListener("click", () => {
   let weight = parseFloat(weight_.value);
   let repetitions = parseFloat(repetitions_.value);
   let percentage = parseFloat(percentage_.value);
+  let exercise = exercise_.value;
 
 const screen = document.querySelector("#screen")
-if(!exercise.value || !weight || !repetitions || !percentage) {
+if(!exercise || !weight || !repetitions || !percentage) {
     screen.textContent = "Fill All Fields"
-} else {
+} else if((exercise !== "Bench Press") && (exercise !== "Biceps Arm Curl") && (exercise !== "Crunch") && (exercise !== "Deadlift") && (exercise !== "Lat Pulldown") && (exercise !== "Leg Press") 
+&& (exercise !== "Overhead Press" ) && (exercise !== "Squat") &&(exercise!=="Seated Cable Row") &&(exercise!== "Triceps Pushdown")){
+  screen.textContent = "Select valid exercise";
+}else if(weight<0){
+  screen.textContent = "Invalid weight given";
+}else if(repetitions<0){
+  screen.textContent="Invalid Reps given";
+}else if(percentage<0 || percentage>100){
+  screen.textContent="Invalid percentage given";
+}
+else{
     /*
   Write your code here on logic for weight repetitions and specify exercise.
     */
@@ -33,7 +44,7 @@ lift.onchange= (e)=>{
   if(liftPath === "Bench Press"){
     videoSource("https://www.youtube.com/embed/SCVCLChPQFY?autoplay=1&mute=1");
   }else if(liftPath === "Biceps Arm Curl"){
-    videoSource("https://www.youtube.com/embed/ykJmrZ5v0Oo?autoplay=1&mute=1");
+    videoSource("https://www.youtube.com/embed/HHLfVkfApF8?autoplay=1&mute=1");
   }else if(liftPath === "Crunch"){
     videoSource("https://www.youtube.com/embed/qZq9bNk1owk?autoplay=1&mute=1");
   }else if(liftPath === "Deadlift"){
