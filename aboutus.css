@@ -1,17 +1,17 @@
 body{
     background-color: #182a36;
 }
-/*
-      Class selectors for all content within the a class
- */
+* {font-family: 'Roboto', sans-serif;}
 
- .Nav {
+.Nav {
     display: flex;
     flex-direction: row;
-    justify-content:center;
+    justify-content: space-evenly;
     width: 100%;
-    margin-top: 30px;
     margin-bottom: 50px;
+    height: 75px;
+    background-color: #237c7c;
+    position: relative;
 }
 
 a {
@@ -20,37 +20,60 @@ a {
 
 nav {
     padding-top: 10px;
-    margin-top: 15px;
 }
 .Button {
+    margin-top: 15px;
     width: 200px;
     height: 50px;
     border-radius: 5px;
-    background-color: #0081D5;
     text-align: center;
     font-size: 1.2rem;
     color: white;
     transition: opacity 0.25s;
-    margin-right: 25px;
 }
+
 
 .Button:hover {
   opacity: 0.85;
+    background-color: #0081D5;
+}
+
+.Button.hover-slide-up::before {
+    bottom: 0; left: 0; right: 0;
+    height: 0%; width: 100%;
+}
+.Button.hover-slide-up:hover::before {
+    height: 100%;
 }
 
 .Button:active {
   opacity: 0.7;
 }
 
-#Button2 {
-    background-color: #03BD5B;
+#Button1:hover {
+    background-color: #3e90cb;
+    transition: background-color 1s;
+}
+#Button2:hover {
+    background-color: #3e90cb;
+    transition: background-color 1s;
 }
 
-#Button3 {
-    background-color: #D2335B;
+#Button3:hover {
+    background-color: #3e90cb;
+    transition: background-color 1s;
+}
+
+#Button4:hover {
+    background-color: #3e90cb;
+    transition: background-color 1s;
+}
+
+h1{
+    font-size: xx-large;
+    padding: 10px;
 }
 section{
-    background-color: #425663;
     color: rgb(186, 186,186);
     align-items: center;
     text-align: center;
@@ -59,10 +82,10 @@ section{
     text-align: left;
     overflow: hidden;
     padding-left: 20px;
-    line-height: 30px;
+    line-height: 35px;
     font-size: 18px;
 }
-img{
+section img{
     float: left;
     width: 200px;
     height: 200px;
@@ -77,6 +100,7 @@ img{
     border-color: #fff;
     height: 300px;
     box-shadow: 0 0 40px #000;
+    background-color: #425663;
 }
 #aleks{
     margin: 20px;
@@ -84,6 +108,7 @@ img{
     border-color: #fff;
     height: 300px;
     box-shadow: 0 0 40px #000;
+    background-color: #425663;
 }
 #jon{
     margin: 20px;
@@ -91,6 +116,7 @@ img{
     border-color: #fff;
     height: 300px;
     box-shadow: 0 0 40px #000;
+    background-color: #425663;
 }
 #affat{
     margin: 20px;
@@ -98,4 +124,5 @@ img{
     border-color: #fff;
     height: 300px;
     box-shadow: 0 0 40px #000;
+    background-color: #425663;
 }
