@@ -360,6 +360,7 @@ section img{
     margin-left: 20px;
     margin-top: 0;
     box-shadow: -10px 30px 30px #000;
+    object-fit: cover;
 }
 #adam{
     margin: 20px;
@@ -377,6 +378,8 @@ section img{
     box-shadow: 0 0 40px #000;
     background-color: #425663;
 }
+
+
 #jon{
     margin: 20px;
     border:2px solid;
