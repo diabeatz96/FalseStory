@@ -268,11 +268,7 @@ patching up
 }
 
 #infobox a {
-    background-color: white;
-    opacity: 60%;
-    border-radius: 3px;
     color: black;
-    padding: 0.8em;
     text-decoration: none;
     text-transform: uppercase;
     box-shadow: 0 5px 0 dimgray;
@@ -280,8 +276,8 @@ patching up
 
 
 #infobox a:active {
-    box-shadow: none;
     top: 5px;
+    color: #00A250;
 }
 
 .height-width-input {
