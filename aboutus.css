@@ -50,8 +50,8 @@ nav {
 
 
 .Button:hover {
-  opacity: 0.85;
-    background-color: #0081D5;
+    background-color: #3e90cb;
+    transition: background-color 0.25s;
 }
 
 .Button.hover-slide-up::before {
@@ -65,6 +65,7 @@ nav {
 .Button:active {
   opacity: 0.7;
 }
+
 
 #Button1:hover {
     background-color: #3e90cb;
