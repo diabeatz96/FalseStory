@@ -390,3 +390,9 @@ label {
   padding: 10px;
   letter-spacing: 2px;
 }
+
+.hometext {
+    padding-top: 10px;
+    color: white;
+    text-align: center;
+}
