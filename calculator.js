@@ -1,6 +1,33 @@
 let submission = document.querySelector(".submission");
 const lift = document.querySelector("#lift");
 
+submission.addEventListener("click", () => {
+
+  const exercise = document.querySelector("#lift");
+  const weight_ = document.querySelector("#dweight");
+  const repetitions_ = document.querySelector("#repetitions");
+  const percentage_ = document.querySelector("#percentage");
+  
+  let weight = parseFloat(weight_.value);
+  let repetitions = parseFloat(repetitions_.value);
+  let percentage = parseFloat(percentage_.value);
+
+const screen = document.querySelector("#screen")
+if(!exercise.value || !weight || !repetitions || !percentage) {
+    screen.textContent = "Fill All Fields"
+} else {
+    /*
+  Write your code here on logic for weight repetitions and specify exercise.
+    */
+
+  let oneRM = weight * (1 + (repetitions/30));
+  let percentageRM = (((percentage)/100) * oneRM).toFixed(2);
+  screen.textContent = percentageRM.toString();
+
+}
+
+})
+
 lift.onchange= (e)=>{
   let liftPath = e.target.value;
   if(liftPath === "Bench Press"){
@@ -31,31 +58,3 @@ lift.onchange= (e)=>{
 const videoSource = (path) => {
   document.querySelector("#demo").src = path;
   }
-console.log(lift.target.value)
-submission.addEventListener("click", () => {
-
-      const exercise = document.querySelector("#lift");
-      const weight_ = document.querySelector("#dweight");
-      const repetitions_ = document.querySelector("#repetitions");
-      const percentage_ = document.querySelector("#percentage");
-      
-      let weight = parseFloat(weight_.value);
-      let repetitions = parseFloat(repetitions_.value);
-      let percentage = parseFloat(percentage_.value);
-
-    const screen = document.querySelector("#screen")
-    if(!exercise.value || !weight || !repetitions || !percentage) {
-        screen.textContent = "Fill All Fields"
-    } else {
-        /*
-      Write your code here on logic for weight repetitions and specify exercise.
-        */
-
-      let oneRM = weight * (1 + (repetitions/30));
-      let percentageRM = (((percentage)/100) * oneRM).toFixed(2);
-      screen.textContent = percentageRM.toString();
-
-    }
-
-})
-
