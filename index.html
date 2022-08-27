@@ -15,136 +15,145 @@
 
   <body>
     <div class="Nav">
-        <div class = "logo">
-            <img class = "logo-img" src="assests/Logo.png"  width="50%" alt ="arm logo">
+      <div class="logo">
+        <img
+          class="logo-img"
+          src="assests/Logo.png"
+          width="50%"
+          alt="arm logo"
+        />
+      </div>
+      <a href="/index.html">
+        <div class="Button hover-slide-up" id="Button1">
+          <nav>Muscle Groups</nav>
         </div>
-        <a href = "#">
-        <div class="Button hover-slide-up" id = "Button1">
-            <nav> Muscle Groups </nav>
+      </a>
+      <a href="/calculator.html">
+        <div class="Button hover-slide-up" id="Button2">
+          <nav>1RM Calculator</nav>
         </div>
-        </a>
-        <a href = "/calculator.html" target="_blank">
-        <div class = "Button hover-slide-up" id = "Button2">
-            <nav> 1RM Calculator </nav>
+      </a>
+      <a href="/aboutus.html">
+        <div class="Button hover-slide-up" id="Button3">
+          <nav>About Us</nav>
         </div>
-        </a>
-        <a href = "https://www.google.com/" target="_blank">
-        <div class = "Button hover-slide-up" id = "Button3">
-            <nav> About Us </nav>
-        </div >
-        </a>
-        <a href = "/FitnessResearchNotebook.html" target="_blank">
-            <div class = "Button hover-slide-up" id = "Button4">
-                <nav> Fitness Tracker </nav>
-            </div >
-        </a>
+      </a>
+      <a href="/FitnessResearchNotebook.html" target="_blank">
+        <div class="Button hover-slide-up" id="Button4">
+          <nav>Fitness Tracker</nav>
+        </div>
+      </a>
 
-        <a href="javascript:void(0)" id="settingsButton" onclick="activateSettings()">
-            <img src="assests/gear.svg" alt = "Gear Icon">
-        </a>
-
+      <a
+        href="javascript:void(0)"
+        id="settingsButton"
+        onclick="activateSettings()"
+      >
+        <img src="assests/gear.svg" alt="Gear Icon" />
+      </a>
     </div>
 
+    <div id="settings">
+      <div id="settingsBar">
+        Login Settings
+        <p class="account">Have an account? Sign in</p>
 
-    <div id = "settings">
-        <div id = "settingsBar"> Login Settings
-            <p class = "account" > Have an account? Sign in</p>
-            
+        <form>
+          <p>
+            <label for="uname"> Username: </label>
+            <input type="text" id="uname" name="uname" size="20" />
+            <br />
+          </p>
+          <p>
+            <label for="pwd"> Password: </label>
+            <input type="password" id="pwd" name="pwd" size="20" />
+          </p>
+          <p>
+            <button class="continue">Continue</button>
+          </p>
+          <p class="account"><a href="#">create an accout</a></p>
+          <p class="height-and-weight">Height & Weight</p>
+        </form>
 
-            <form>
-                <p>
-                    <label for="uname"> Username: </label>
-                    <input type="text" id="uname" name="uname" size="20">
-                    <br>
-                </p>
-                <p>
-                    <label for="pwd"> Password: </label>
-                    <input type="password" id="pwd" name="pwd" size="20">
-                </p>
-                <p>
-                    <button class = "continue">Continue</button> 
-                </p>
-                <p class = "account"><a href="#">create an accout</a></p>
-                <p class = "height-and-weight">Height & Weight</p>
-            </form>
-
-            <!-- height and weight box  -->
-            <div>
-                <form>
-                    <!-- height input -->
-                    <div class = "height-width-input">
-                        <label for="height"> Height: </label>
-                        <input type="text" id="height" name="height" size="5">
-                        <br>
-                        <br>
-                        <!-- weight input -->
-                        <label class = "weight" for="weight"> Weight: </label>
-                        <input type="text" id="weight" name="weight" size="5">
-                    </div>
-
-                    <div class = "height-width-buttons">
-                        <!-- height button -->
-                        cm
-                        <label class="switch">
-                            <input type="checkbox" checked>
-                            <span class="slider round"></span>
-                        </label>
-                        in
-                        <br>
-                        <br>
-
-                        <!-- weight button -->
-                        kg
-                        <label class="switch">
-                            <input type="checkbox" checked>
-                            <span class="slider round"></span>
-                        </label>
-                        lb
-
-                    </div>
-                </form>
+        <!-- height and weight box  -->
+        <div>
+          <form>
+            <!-- height input -->
+            <div class="height-width-input">
+              <label for="height"> Height: </label>
+              <input type="text" id="height" name="height" size="5" />
+              <br />
+              <br />
+              <!-- weight input -->
+              <label class="weight" for="weight"> Weight: </label>
+              <input type="text" id="weight" name="weight" size="5" />
             </div>
 
-            <br>
-            <br>
+            <div class="height-width-buttons">
+              <!-- height button -->
+              cm
+              <label class="switch">
+                <input type="checkbox" checked />
+                <span class="slider round"></span>
+              </label>
+              in
+              <br />
+              <br />
 
-            <!-- body type box -->
-            <div>
-                <label  for = "gender-label">Choose Gender</label>
-                <select class = "gender-dropdown" name = "gender-label">
-                    <option disabled selected>Gender</option>
-                    <option value = "male">Male</option>
-                    <option value = "female">Female</option>
-                    <option value = "nonbinary">Non-Binary</option>
-                    <option value = "not-available">Do not wish to identify</option>
-                </select>
+              <!-- weight button -->
+              kg
+              <label class="switch">
+                <input type="checkbox" checked />
+                <span class="slider round"></span>
+              </label>
+              lb
             </div>
-
-            <p class = "account" >
-                <button class = "sign-up-button">Save Settings</button>
-            </p>
-
+          </form>
         </div>
+
+        <br />
+        <br />
+
+        <!-- body type box -->
+        <div>
+          <label for="gender-label">Choose Gender</label>
+          <select class="gender-dropdown" name="gender-label">
+            <option disabled selected>Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="nonbinary">Non-Binary</option>
+            <option value="not-available">Do not wish to identify</option>
+          </select>
+        </div>
+
+        <p class="account">
+          <button class="sign-up-button">Save Settings</button>
+        </p>
+      </div>
     </div>
 
-    <div class = "bodies-div">
-        <section class = "Bodies">
-            <div class = "body-div">
-                <object type="image/svg+xml" data="assests/body-front.svg" id ="FrontBody">
+    <div class="bodies-div">
+      <section class="Bodies">
+        <div class="body-div">
+          <object
+            type="image/svg+xml"
+            data="assests/body-front.svg"
+            id="FrontBody"
+          ></object>
+          <p class="body-p">Front</p>
+        </div>
 
-                </object>
-                <p class = "body-p">Front</p>
-            </div>
-
-            <div class = "body-div">
-                <figure>
-                    <object type="image/svg+xml" data="assests/body-back.svg" id = "BackBody">
-
-                    </object>
-                    <p class = "body-p">Back</p>
-                </figure>
-            </div>
-        </section>
+        <div class="body-div">
+          <figure>
+            <object
+              type="image/svg+xml"
+              data="assests/body-back.svg"
+              id="BackBody"
+            ></object>
+            <p class="body-p">Back</p>
+          </figure>
+        </div>
+      </section>
     </div>
 
     <a
@@ -155,7 +164,6 @@
       <img src="assests/gear.svg" alt="Gear Icon" />
     </a>
   </body>
-
 
   <script type="text/javascript" src="muscles.js"></script>
 </html>
