@@ -267,6 +267,21 @@ patching up
     background-image: linear-gradient(-20deg, #00cdac 0%, #8ddad5 100%);
 }
 
+#infobox a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    box-shadow: 0 3px 0 antiquewhite;
+    font-size: 13px;
+}
+
+
+#infobox a:hover {
+    top: 5px;
+    color: #00A250;
+    box-shadow: 0 3px 0 darkgreen;
+}
+
 .height-width-input {
   width: 55%;
   float: left;
@@ -344,7 +359,7 @@ label {
   margin-top: 15px;
 }
 
-.gender-dropdown:focus, 
+.gender-dropdown:focus,
 .gender-dropdown:hover {
   outline: none;
   border: 1px solid #0c151b;
@@ -374,4 +389,10 @@ label {
   margin-top: 10px;
   padding: 10px;
   letter-spacing: 2px;
+}
+
+.hometext {
+    padding-top: 10px;
+    color: white;
+    text-align: center;
 }

@@ -10,16 +10,50 @@
         transition: 0.5s;
       }
 
+      #abdomen:hover {
+        fill: #ffa500;
+      }
+
+      #trapezoid:hover {
+        fill: #ffff00;
+      }
+
+      #pectorals:hover {
+        fill: #008000;
+      }
+
+      #quadriceps:hover {
+        fill: #0000ff;
+      }
+
+      #tibialis:hover {
+        fill: #4b0082;
+      }
+
+      #gastrocnemius:hover {
+        fill: #ee82ee;
+      }
+
+      #abductors:hover {
+        fill: #ff0000;
+      }
+
+      #biceps:hover {
+        fill: #1c1c34;
+      }
+
+      #deltoids:hover {
+        fill: #63949c;
+      }
+
+      #flexors:hover {
+        fill:#05f9fb;
+      }
       .muscle {
         fill: #515761;
       }
 
       .muscle:hover {
-        fill: red;
-      }
-
-      .muscle:hover {
-      fill: red;
       filter: url(#red-glow);
       }
 
@@ -92,11 +126,7 @@
 
       <!-- merge all the blurs except for the first one -->
       <feMerge result="blur-merged">
-        <feMergeNode in="blur10"/>
-        <feMergeNode in="blur20"/>
         <feMergeNode in="blur30"/>
-        <feMergeNode in="blur50"/>
-        <feMergeNode in="blur80"/>
       </feMerge>
       <!-- recolour the merged blurs red-->
 
@@ -106,8 +136,8 @@
                              0 0 0.44 0 0
                              0 0 0 0.5 0" />
       <feMerge>
-        <feMergeNode in="red-blur"/>       <!-- largest blurs coloured red -->
-        <feMergeNode in="blur50"/>          <!-- smallest blur left white -->
+        <feMergeNode in="white-blur"/>       <!-- largest blurs coloured red -->
+        <feMergeNode in="blur75"/>          <!-- smallest blur left white -->
         <feMergeNode in="SourceGraphic"/>  <!-- original white text -->
       </feMerge>
     </filter>
